@@ -36,7 +36,7 @@ module LifeGame
     end
 
     def to_s
-      "[#{@name}] #{money} yen"
+      "[#{@name}](#{job_name}) #{@money} yen"
     end
   end
 end
