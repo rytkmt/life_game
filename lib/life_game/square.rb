@@ -61,7 +61,8 @@ module LifeGame
     end
 
     def act_by_stopped(player:)
-      player.money += BONUSES[@goal_count]
+      player.money += BONUSES[@goal_count].to_i
+      player.goal
       @goal_count += 1
     end
   end
